@@ -1,0 +1,87 @@
+.body {
+    background-color: black;
+ }
+ 
+ 
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "h h h h h h"
+        "n n n n n n"
+        "m m m m m m";
+ }
+ 
+ 
+ @media (width < 650px) or (orientation: portrait) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "h h h h h n"
+            "m m m m m n"
+            "m m m m m n";
+    }
+ 
+ 
+ }
+ 
+ 
+ header {
+    grid-area: h;
+ }
+ 
+ 
+ .header {
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: 10px solid rgb(255, 255, 50);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    margin: 5px 5px 10px 5px;
+ 
+ 
+ }
+ 
+ 
+ nav {
+    grid-area: n;
+ }
+ 
+ 
+ .nav {
+    text-align: center;
+    border: 10px solid rgb(255, 255, 50);
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+ }
+ 
+ 
+ main {
+    grid-area: m;
+ }
+ 
+ 
+ .main {
+    text-align: center;
+    border: 10px solid rgb(255, 255, 50);
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+ }
+ 
+ 
+ img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+ }
+ 
