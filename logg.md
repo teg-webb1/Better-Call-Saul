@@ -5,3 +5,4 @@ Måste kommentera kod
 Måste importera bilder och göra main till flexbox
 Lagt till en folder för imgs
 
+Commit 2: Jag har tweakat lite på paddings och tagit bort lorem ipsum i nav och main, lagt in bilder och nav hyperlinks. Sedan så fixade jag så alla images inte blev capped på 300px width genom att jag använde mig av .header img för att selecta Better Call Saul-loggan.

@@ -27,6 +27,9 @@
          "m m m m m m"
          "m m m m m m";
    }
+   .nav a {
+      padding: 0px;
+   }
 
 
 }
@@ -77,6 +80,7 @@ main {
    flex-direction: row;
    flex-wrap: wrap;
    gap: 10px;
+   padding: 10px;
    border: 10px solid rgb(255, 255, 50);
    margin: 5px 5px 5px 5px;
    justify-content: center;
