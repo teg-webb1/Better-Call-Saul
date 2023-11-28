@@ -6,3 +6,5 @@ Måste importera bilder och göra main till flexbox
 Lagt till en folder för imgs
 
 Commit 2: Jag har tweakat lite på paddings och tagit bort lorem ipsum i nav och main, lagt in bilder och nav hyperlinks. Sedan så fixade jag så alla images inte blev capped på 300px width genom att jag använde mig av .header img för att selecta Better Call Saul-loggan.
+
+Commit 3: Jag har lärt mig att commita lite oftare då en stor del av mitt arbete idag gick förlorat på grund av någonting, och då hade jag bara en commit som var ganska länge sedan att använda. Men, jag har skapat andra index-filer för de olika sidorna i hemsidan och de använder sig av samma 
