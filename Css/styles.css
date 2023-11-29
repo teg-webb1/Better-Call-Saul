@@ -8,9 +8,12 @@ p {
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-/* padding för anchors i nav-diven */
+/* selectar alla anchors i .nav-diven */
 .nav a {
+   /* padding för anchors i .nav-diven */
    padding: 30px;
+   /* ändrar font för anchors i .nav-diven */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
