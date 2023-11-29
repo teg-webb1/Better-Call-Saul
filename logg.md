@@ -30,3 +30,5 @@ Commit 11: Jag städade kodraderna lite, så att det ser snyggare ut. Jag lade �
 Commit 12: Kommenterat kod. Ändrat font family till en med sans-serif för att fler webbläsare stödjer den fonten.
 
 Commit 13: Ändrade font för anchors i .nav-diven.
+
+Commit 14: Lade till h1 och h3-rubriker, ändrade paddingen i media queryn för anchors i nav så att de har en större yta som de reagerar på, vilket är mer tillgängligt för ex. mobilanvändare.
