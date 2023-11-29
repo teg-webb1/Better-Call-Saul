@@ -26,3 +26,5 @@ Commit 9: Lagt till en bild på home-sidan och ändrat .img gränsen för bilder
 Commit 10: Nu har jag gjort klart plot-sidan. Jag klistrade in en text och importerade två images som jag sedan lade in. Jag kopierade all kod från styles.css och gjorde en ny css-fil som indexP.html länkar till. Detta är för att jag skapade en grid i main. Där gjorde jag en media query som gäller när enheten är i stående läge eller när width är under 500px. Media queryn flyttar upp de två bilderna ovanför texten med hjälp av grid-template-areas. Detta är i syftet att man inte skulle ha sett bilderna direkt om man hade kollat på sidan med en mobil då texten är så lång. Jag vill att man ska se dem direkt, och det kan man även göra i landscape-läge.
 
 Commit 11: Jag städade kodraderna lite, så att det ser snyggare ut. Jag lade även till en länk på miscellaneous-sidan, ett dåligt skämt. Nu ska jag kommentera koden.
+
+Commit 12: Kommenterat kod. Ändrat font family till en med sans-serif för att fler webbläsare stödjer den fonten.
