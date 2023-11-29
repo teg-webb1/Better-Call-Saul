@@ -4,7 +4,12 @@
 }
 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(255, 50, 51);
 }
 
 .nav a {
@@ -45,7 +50,8 @@ p {
     }
 
     .nav a {
-        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .nav {

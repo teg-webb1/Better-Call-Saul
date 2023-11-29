@@ -3,9 +3,15 @@
    background-color: black;
 }
 
-/* teckensnitt */
+/* teckensnitt för paragraphs */
 p {
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* teckensnitt för header 1*/
+h1 {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color:rgb(255, 50, 51);
 }
 
 /* selectar alla anchors i .nav-diven */
@@ -65,7 +71,9 @@ p {
          "m m m m m m";
    }
    .nav a {
-      padding: 0px;
+      /* nollställer utrymmet på höger och vänster sida mellan anchors och kanterna på nav-diven */
+      padding-left: 0px;
+      padding-right: 0px;
    }
    .nav {
       /* definierar om items som flexar inuti nav ska wrapa (lägga sig */
@@ -123,6 +131,11 @@ main {
    color: white;
 }
 
+.charactertitle {
+   /* gör så att diven inte kan wrapa */
+   width: 100%
+}
+
 /* selectar flera divar */
 .sauldesc, .lalodesc, .kimdesc, .mikedesc {
    max-width: 300px;
@@ -133,7 +146,6 @@ main {
    /* begränsar bredden för diven */
    max-width: 500px;
 }
-
 
 img {
    width: 100%;
