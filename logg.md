@@ -14,3 +14,5 @@ Commit 4: Jag har ändrat grid-template-areas lite då 3 rader inte behövdes. S
 Commit 5: Nu har jag lagt till padding mellan länkarna i nav och gjort så att det inte finns någon padding när media queryn är aktiv. Jag försöker leta efter ett sätt för .nav diven att fylla upp hela tomma området.
 
 Commit 6: Jag har nu gjort så att diven tar upp hela tomma området genom att sätta min-height till 100%. Men jag märkte att den överskred .main diven så då satte jag box-sizing till border-box, vilket gör så att storleken på containern begränsas till kanterna av containern. Men nu vidrörde .nav diven .main diven, så jag fixade även det.
+
+Nu måste jag överföra den ändrade koden från indexC.html till alla andra indexfiler.
