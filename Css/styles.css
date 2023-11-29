@@ -95,6 +95,13 @@ main {
    color: white;
 }
 
+.sauldesc, .lalodesc, .kimdesc, .mikedesc {
+   max-width: 300px;
+}
+
+.bcsdesc {
+   max-width: 500px;
+}
 
 img {
    width: 100%;
@@ -122,6 +129,5 @@ a:hover {
 }
 
 .main img {
-   max-width: 300px;
    border-radius: 10px;
 }

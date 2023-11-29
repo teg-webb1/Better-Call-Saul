@@ -16,3 +16,11 @@ Commit 5: Nu har jag lagt till padding mellan länkarna i nav och gjort så att 
 Commit 6: Jag har nu gjort så att diven tar upp hela tomma området genom att sätta min-height till 100%. Men jag märkte att den överskred .main diven så då satte jag box-sizing till border-box, vilket gör så att storleken på containern begränsas till kanterna av containern. Men nu vidrörde .nav diven .main diven, så jag fixade även det.
 
 Nu måste jag överföra den ändrade koden från indexC.html till alla andra indexfiler.
+
+Commit 7: Nu har jag fixat det.
+
+Commit 8: Kopierat lite passande karaktärsbeskrivningar från google och klistrat in dem som figcaptions under varje image. Jag lade till divs för varje image i character-main-diven så att jag kunde sätta max-width till 300px. Detta är för att jag vill att texten ska se kompakt ut och inte ta upp hela sidan när den ökar i width. Och för att divarna ska kunna wrapa.
+
+Commit 9: Lagt till en bild på home-sidan och ändrat .img gränsen för bilder från 300px till unlimited och istället specifikt ändrat .header img gränsen till 300px och sedan .bcsdesc till max 500px.
+
+Commit 10: Nu har jag gjort klart plot-sidan. Jag klistrade in en text och importerade två images som jag sedan lade in. Jag kopierade all kod från styles.css och gjorde en ny css-fil som indexP.html länkar till. Detta är för att jag skapade en grid i main. Där gjorde jag en media query som gäller när enheten är i stående läge eller när width är under 500px. Media queryn flyttar upp de två bilderna ovanför texten med hjälp av grid-template-areas. Detta är i syftet att man inte skulle ha sett bilderna direkt om man hade kollat på sidan med en mobil då texten är så lång. Jag vill att man ska se dem direkt, och det kan man även göra i landscape-läge.
