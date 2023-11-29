@@ -1,0 +1,151 @@
+.body {
+    background-color: black;
+ }
+ 
+ .nav a {
+    padding: 30px;
+ }
+ 
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+       "h h h h h h"
+       "n n n n n n"
+       "m m m m m m";
+ }
+ 
+ .nav {
+    display: flex;
+    text-align: center;
+    border: 10px solid rgb(255, 255, 50);
+    margin: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+ }
+ 
+ @media (width < 500px) or (orientation: portrait) {
+    .grid {
+       display: grid;
+       grid-template-columns: repeat(6, 1fr);
+       grid-template-rows: auto auto;
+       grid-template-areas:
+          "h h h h h n"
+          "m m m m m m";
+    }
+    .nav a {
+       padding: 0px;
+    }
+    .nav {
+       flex-wrap: wrap;
+       min-height: calc(100% - 10px);
+ 
+    }
+ 
+ 
+ }
+ 
+ 
+ header {
+    grid-area: h;
+ }
+ 
+ 
+ .header {
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: 10px solid rgb(255, 255, 50);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    margin: 5px;
+ }
+ 
+ 
+ nav {
+    grid-area: n;
+ }
+ 
+ 
+ 
+ 
+ 
+ main {
+    grid-area: m;
+ }
+ 
+ 
+ .main {
+    display: grid;
+    object-fit: cover;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "t t"
+    "img1 img2";
+    gap: 10px;
+    padding: 10px;
+    border: 10px solid rgb(255, 255, 50);
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+ }
+ 
+ @media (width < 500px) or (orientation: portrait) {
+    .main {
+        grid-template-areas:
+        "img1 img2"
+        "t t"
+    }
+ }
+ 
+ .plotdesc {
+    grid-area: t;
+ }
+
+ .saultelephone {
+    grid-area: img1;
+    width: 100%;
+    height: auto;
+ }
+
+ .saulwalking {
+    grid-area: img2;
+    width: 100%;
+    height: auto;
+ }
+ img {
+    width: 100%;
+    height: auto;
+ }
+ 
+ a:link {
+    color: rgb(255, 50, 51);
+    background-color: transparent;
+    text-decoration: none;
+ }
+ 
+ a:visited {
+    color: rgb(255, 50, 51);
+    background-color: transparent;
+    text-decoration: none;
+ }
+ 
+ a:hover {
+    color: white;
+ }
+ 
+ .header img {
+    max-width: 300px;
+ }
+
+ .main img {
+    border-radius: 10px;
+ }
