@@ -16,19 +16,34 @@
       "m m m m m m";
 }
 
+.nav {
+   display: flex;
+   text-align: center;
+   border: 10px solid rgb(255, 255, 50);
+   margin: 5px;
+   justify-content: center;
+   border-radius: 10px;
+   color: white;
+   padding: 5px;
+   box-sizing: border-box;
+}
 
-@media (width < 650px) or (orientation: portrait) {
+@media (width < 500px) or (orientation: portrait) {
    .grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: auto auto auto;
+      grid-template-rows: auto auto;
       grid-template-areas:
          "h h h h h n"
-         "m m m m m m"
          "m m m m m m";
    }
    .nav a {
       padding: 0px;
+   }
+   .nav {
+      flex-wrap: wrap;
+      min-height: calc(100% - 10px);
+
    }
 
 
@@ -48,7 +63,7 @@ header {
    border-radius: 10px;
    padding: 10px;
    justify-content: center;
-   margin: 5px 5px 5px 5px;
+   margin: 5px;
 }
 
 
@@ -57,15 +72,7 @@ nav {
 }
 
 
-.nav {
-   text-align: center;
-   border: 10px solid rgb(255, 255, 50);
-   margin: 5px 5px 5px 5px;
-   justify-content: center;
-   border-radius: 10px;
-   color: white;
-   padding: 5px;
-}
+
 
 
 main {
