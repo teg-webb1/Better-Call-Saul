@@ -28,3 +28,5 @@ Commit 10: Nu har jag gjort klart plot-sidan. Jag klistrade in en text och impor
 Commit 11: Jag städade kodraderna lite, så att det ser snyggare ut. Jag lade även till en länk på miscellaneous-sidan, ett dåligt skämt. Nu ska jag kommentera koden.
 
 Commit 12: Kommenterat kod. Ändrat font family till en med sans-serif för att fler webbläsare stödjer den fonten.
+
+Commit 13: Ändrade font för anchors i .nav-diven.
