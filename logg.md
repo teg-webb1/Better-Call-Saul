@@ -35,4 +35,6 @@ Commit 14: Lade till h1 och h3-rubriker, ändrade paddingen i media queryn för 
 
 Commit 15: Tog bort h3-rubriken och lade till h2 istället då det ser mer estetiskt tillfredsställande ut.
 
-Commit 16: Ändrade filnamn från bcs.jpg till bcsposter.jpg då det är mer specifikt och mer exakt.
+Commit 16: Ändrade filnamn från bcs.jpeg till bcsposter.jpeg då det är mer specifikt och mer exakt.
+
+Commit 17: Bytte bcs.jpg och bcsposter.jpg till .jpeg i logg.md
