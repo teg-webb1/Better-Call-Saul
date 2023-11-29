@@ -1,22 +1,27 @@
+/* bakgrundsfärg svart */
 .body {
    background-color: black;
 }
 
-
+/* teckensnitt */
 p {
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-
+/* padding för anchors i nav-diven */
 .nav a {
    padding: 30px;
 }
 
 
 .grid {
+   /* definierar grid för alla barn*/
    display: grid;
+   /* 6st grid-kolumner, alla lika stora */
    grid-template-columns: repeat(6, 1fr);
+   /* tre rader, automatisk storlek */
    grid-template-rows: auto auto auto;
+   /* definierade ytor på griden */
    grid-template-areas:
       "h h h h h h"
       "n n n n n n"
@@ -25,18 +30,28 @@ p {
 
 
 .nav {
+   /* definierar flexbox för alla barn */
    display: flex;
+   /* centrerade objekt */
    text-align: center;
+   /* shorthand property för tjocklek stil och färg av bordern */
    border: 10px solid rgb(255, 255, 50);
+   /* shorthand, avstånd till nästa objekt */
    margin: 5px;
+   /* alla items som flexar läggs i mitten */
    justify-content: center;
+   /* rundar kanterna */
    border-radius: 10px;
+   /* vit textfärg */
    color: white;
+   /* padding i box model till 5px */
    padding: 5px;
+   /* definierar hur stor en box ska vara. border-box betyder */
+   /* att storleken når ut till bordern */
    box-sizing: border-box;
 }
 
-
+/* media query */
 @media (width < 500px) or (orientation: portrait) {
    .grid {
       display: grid;
@@ -50,25 +65,29 @@ p {
       padding: 0px;
    }
    .nav {
+      /* definierar om items som flexar inuti nav ska wrapa (lägga sig */
+      /* bredvid varandra eller inte när de får mer plats */
       flex-wrap: wrap;
+      /* minsta höjden för nav-diven, jag använde calc då */
+      /* 100% nådde ända ner till nästa div, och gap:et */
+      /* mellan divarna är 10px */
       min-height: calc(100% - 10px);
    }
 }
 
 
 header {
+   /* definierar vilken yta i grid-template-areas som headerns barn */
+   /* ska ta upp */
    grid-area: h;
 }
 
 
 .header {
    text-align: center;
-   height: auto;
-   width: auto;
    border: 10px solid rgb(255, 255, 50);
    border-radius: 10px;
    padding: 10px;
-   justify-content: center;
    margin: 5px;
 }
 
@@ -85,11 +104,14 @@ main {
 
 .main {
    display: flex;
+   /* hur img:en ska sitta i boxen, nu täcker den hela boxen */
    object-fit: cover;
    text-align: center;
+   /* items som flexar, flexar i sidled */
    flex-direction: row;
    flex-wrap: wrap;
-   gap: 10px;
+   /* avstånd mellan divarna inuti .main */
+   gap: 5px;
    padding: 10px;
    border: 10px solid rgb(255, 255, 50);
    margin: 5px 5px 5px 5px;
@@ -98,47 +120,51 @@ main {
    color: white;
 }
 
-
+/* selectar flera divar */
 .sauldesc, .lalodesc, .kimdesc, .mikedesc {
    max-width: 300px;
 }
 
 
 .bcsdesc {
+   /* begränsar bredden för diven */
    max-width: 500px;
 }
 
 
 img {
    width: 100%;
+   /* automatisk height relativ till width:en */
    height: auto;
 }
 
-
+/* anchor selector, definierar vilken typ av anchor */
 a:link {
+   /* rgb färg */
    color: rgb(255, 50, 51);
    background-color: transparent;
+   /* neutraliserar länken */
    text-decoration: none;
 }
 
-
+/* anchors som redan är besökta */
 a:visited {
    color: rgb(255, 50, 51);
    background-color: transparent;
    text-decoration: none;
 }
 
-
+/* gäller när man svävar över anchorn med musen */
 a:hover {
    color: white;
 }
 
-
+/* img:s i .header diven selectas */
 .header img {
    max-width: 300px;
 }
 
-
+/* img:s i .main diven selectas */
 .main img {
    border-radius: 10px;
 }
