@@ -1,22 +1,26 @@
 .body {
     background-color: black;
- }
- 
- .nav a {
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav a {
     padding: 30px;
- }
- 
- .grid {
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas:
-       "h h h h h h"
-       "n n n n n n"
-       "m m m m m m";
- }
- 
- .nav {
+        "h h h h h h"
+        "n n n n n n"
+        "m m m m m m";
+}
+
+.nav {
     display: flex;
     text-align: center;
     border: 10px solid rgb(255, 255, 50);
@@ -26,36 +30,38 @@
     color: white;
     padding: 5px;
     box-sizing: border-box;
- }
- 
- @media (width < 500px) or (orientation: portrait) {
+}
+
+@media (width < 500px) or (orientation: portrait) {
     .grid {
-       display: grid;
-       grid-template-columns: repeat(6, 1fr);
-       grid-template-rows: auto auto;
-       grid-template-areas:
-          "h h h h h n"
-          "m m m m m m";
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "h h h h h n"
+            "m m m m m m";
     }
+
     .nav a {
-       padding: 0px;
+        padding: 0px;
     }
+
     .nav {
-       flex-wrap: wrap;
-       min-height: calc(100% - 10px);
- 
+        flex-wrap: wrap;
+        min-height: calc(100% - 10px);
+
     }
- 
- 
- }
- 
- 
- header {
+
+
+}
+
+
+header {
     grid-area: h;
- }
- 
- 
- .header {
+}
+
+
+.header {
     text-align: center;
     height: auto;
     width: auto;
@@ -64,88 +70,85 @@
     padding: 10px;
     justify-content: center;
     margin: 5px;
- }
- 
- 
- nav {
+}
+
+
+nav {
     grid-area: n;
- }
- 
- 
- 
- 
- 
- main {
+}
+
+
+main {
     grid-area: m;
- }
- 
- 
- .main {
+}
+
+.main {
     display: grid;
     object-fit: cover;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas:
-    "t t"
-    "img1 img2";
+        "t t"
+        "img1 img2";
     gap: 10px;
     padding: 10px;
     border: 10px solid rgb(255, 255, 50);
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     justify-content: center;
     border-radius: 10px;
     color: white;
- }
- 
- @media (width < 500px) or (orientation: portrait) {
+}
+
+@media (width < 500px) or (orientation: portrait) {
     .main {
         grid-template-areas:
-        "img1 img2"
-        "t t"
+            "img1 img2"
+            "t t"
     }
- }
- 
- .plotdesc {
-    grid-area: t;
- }
+}
 
- .saultelephone {
+.plotdesc {
+    grid-area: t;
+}
+
+.saultelephone {
     grid-area: img1;
     width: 100%;
     height: auto;
- }
+}
 
- .saulwalking {
+.saulwalking {
     grid-area: img2;
     width: 100%;
     height: auto;
- }
- img {
+}
+
+img {
     width: 100%;
     height: auto;
- }
- 
- a:link {
-    color: rgb(255, 50, 51);
-    background-color: transparent;
-    text-decoration: none;
- }
- 
- a:visited {
-    color: rgb(255, 50, 51);
-    background-color: transparent;
-    text-decoration: none;
- }
- 
- a:hover {
-    color: white;
- }
- 
- .header img {
-    max-width: 300px;
- }
+}
 
- .main img {
+a:link {
+    color: rgb(255, 50, 51);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 50, 51);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.header img {
+    max-width: 300px;
+}
+
+.main img {
     border-radius: 10px;
- }
+}

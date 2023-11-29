@@ -2,9 +2,16 @@
    background-color: black;
 }
 
+
+p {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
 .nav a {
    padding: 30px;
 }
+
 
 .grid {
    display: grid;
@@ -15,6 +22,7 @@
       "n n n n n n"
       "m m m m m m";
 }
+
 
 .nav {
    display: flex;
@@ -27,6 +35,7 @@
    padding: 5px;
    box-sizing: border-box;
 }
+
 
 @media (width < 500px) or (orientation: portrait) {
    .grid {
@@ -43,10 +52,7 @@
    .nav {
       flex-wrap: wrap;
       min-height: calc(100% - 10px);
-
    }
-
-
 }
 
 
@@ -72,9 +78,6 @@ nav {
 }
 
 
-
-
-
 main {
    grid-area: m;
 }
@@ -95,18 +98,22 @@ main {
    color: white;
 }
 
+
 .sauldesc, .lalodesc, .kimdesc, .mikedesc {
    max-width: 300px;
 }
+
 
 .bcsdesc {
    max-width: 500px;
 }
 
+
 img {
    width: 100%;
    height: auto;
 }
+
 
 a:link {
    color: rgb(255, 50, 51);
@@ -114,19 +121,23 @@ a:link {
    text-decoration: none;
 }
 
+
 a:visited {
    color: rgb(255, 50, 51);
    background-color: transparent;
    text-decoration: none;
 }
 
+
 a:hover {
    color: white;
 }
 
+
 .header img {
    max-width: 300px;
 }
+
 
 .main img {
    border-radius: 10px;
